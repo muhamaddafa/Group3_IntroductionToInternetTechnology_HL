@@ -8,12 +8,16 @@ let jmlAutoClick = 1;
 
 let audioGet = $("#MoneySound")[0];
 let audioOut = $("#BuySound")[0];
+let bgmusic = $("#bgmusic")[0];
 
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.2;
-    audio.play();
-});
+let music = confirm("Nyalakan Music?");
+
+if (music == true) {
+    bgmusic.play();
+    bgmusic.volume = 0.35;
+} else {
+    bgmusic.stop();
+};
 
 $(".gambarTahu").click(function nambahUang() {
     uangJuragan = uangJuragan + incomeClick;
