@@ -6,9 +6,19 @@ let bukaCabangVal = 50;
 let autoWaktu = 1000;
 let jmlAutoClick = 1;
 
+let audioGet = $("#MoneySound")[0];
+let audioOut = $("#BuySound")[0];
+
+window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.querySelector("audio");
+    audio.volume = 0.2;
+    audio.play();
+});
+
 $(".gambarTahu").click(function nambahUang() {
     uangJuragan = uangJuragan + incomeClick;
     $(".uangVal").text("$" + uangJuragan);
+    audioGet.play();
 });
 
 $(".btnCabang").click(function beliCabang() {
@@ -28,29 +38,31 @@ $(".btnCabang").click(function beliCabang() {
         jmlCabang = jmlCabang + 1;
         $(".cabangVal").text(jmlCabang);
         jmlAutoClick++;
+        audioOut.play();
     }
 });
 
-$(".btnAuto").click(function beliAuto() {
+$(".btnAuto").click(() => {
     if (uangJuragan < clickerVal) {
-        alert("Maaf Uang Juragan Tidak Cukup.")
+        alert("Maaf Uang Juragan Tidak Cukup.");
     } else {
         uangJuragan = uangJuragan - clickerVal;
         $(".uangVal").text("$" + uangJuragan);
 
         iconAuto = $("<i/>", {
-            class:"fa-solid fa-wand-sparkles me-2"
+            class: "fa-solid fa-wand-sparkles me-2"
         });
         $(".btnAuto").empty();
         $(".btnAuto").text("Auto Clicker telah Dibeli");
         $(".btnAuto").attr("disabled", true);
-        
+
         setInterval(autoNambah, autoWaktu);
 
-        function autoNambah () {
+        function autoNambah() {
             uangJuragan = uangJuragan + jmlAutoClick;
             $(".uangVal").text("$" + uangJuragan);
         };
+        audioOut.play();
     };
 });
 
