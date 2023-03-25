@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sigmar+One&display=swap');
+
+* {
+  font-family: 'Secular One', sans-serif;
+}
+
+body {
+  background-color: #41C3C5;
+}
+
+.gambarTahu {
+  width: 80%;
+}
+
+.mainDisplay {
+  background-image: url(../Asset/img/background-utama.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.btn-nav {
+  padding: 12px 24px;
+  border: none;
+  background-color: #078080;
+  color: #f8f5f2;
+  border-radius: 10px;
+  box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
+}
+
+.btnJual {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+}
+
+.cards {
+  height: 100%;
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.btnBuy {
+  width: 100%;
+  height: 60px;
+  background-color: #078080;
+  border: none;
+  color: #f8f5f2;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.modal-title {
+  color: #f8f5f2;
+}
+
+.btnUpgrade {
+  width: 100%;
+  height: 60px;
+  background-color: #078080;
+  border: none;
+  color: #f8f5f2;
+  border-radius: 10px;
+}
+
+.keterangan {
+  color: #f8f5f2;
+}
+
+.incomeJuragan {
+  background-color: #078080; 
+  display: inline-block; 
+  color: #f8f5f2; 
+  border-radius: 10px;
+  box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
+}
+
+.judulGame h1{
+  font-family: 'Sigmar One', cursive;
+  text-shadow: 0px 6px 5px rgba(185, 185, 185, 1);
+  color: #232323;
+}
+
+.icon {
+  text-decoration: none;
+  color: #232323;
+}
+
+
+@media (max-width: 992px) {
+  
+  .container {
+    width: 90%;
+  }
+
+  .gambarTahu {
+    width: 100%;
+  }
+  
+}
