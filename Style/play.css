@@ -12,6 +12,10 @@ body {
   width: 80%;
 }
 
+.gambarTahu:hover {
+  cursor: pointer;
+}
+
 .mainDisplay {
   background-image: url(../Asset/img/background-utama.jpeg);
   background-size: cover;
