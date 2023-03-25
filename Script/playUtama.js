@@ -1,9 +1,9 @@
 let incomeClick = 1;
 let jmlCabang = 0;
 let uangJuragan = 0;
-let clickerVal = 20;
+let clickerVal = 80;
 let bukaCabangVal = 50;
-let autoWaktu = 4000;
+let autoWaktu = 1000;
 let jmlAutoClick = 1;
 
 $(".gambarTahu").click(function nambahUang() {
@@ -37,18 +37,13 @@ $(".btnAuto").click(function beliAuto() {
     } else {
         uangJuragan = uangJuragan - clickerVal;
         $(".uangVal").text("$" + uangJuragan);
-        clickerVal = clickerVal*2;
+
         iconAuto = $("<i/>", {
             class:"fa-solid fa-wand-sparkles me-2"
         });
         $(".btnAuto").empty();
-        if (clickerVal > 80) {
-            $(".btnAuto").text("Max Level");
-            $(".btnAuto").attr("disabled", true);
-        } else {
-            $(".btnAuto").append(iconAuto);
-            $(iconAuto).after("Beli Auto Clicker $" + clickerVal);
-        };
+        $(".btnAuto").text("Auto Clicker telah Dibeli");
+        $(".btnAuto").attr("disabled", true);
         
         setInterval(autoNambah, autoWaktu);
 
@@ -56,7 +51,6 @@ $(".btnAuto").click(function beliAuto() {
             uangJuragan = uangJuragan + jmlAutoClick;
             $(".uangVal").text("$" + uangJuragan);
         };
-        autoWaktu = autoWaktu - 1000;
     };
 });
 
