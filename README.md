@@ -1,5 +1,5 @@
 # Group3_IntroductionToInternetTechnology_HL
-The Project For MidTerm Exam (Introduction To Internet Technology) - HL
+The Project For MidTerm Exam (Introduction To Internet Technology) - H - LAB
 
 1. Muhamad Dafa (00000077651)
 2. Salma Manda Putri Nabilah (00000077712)
