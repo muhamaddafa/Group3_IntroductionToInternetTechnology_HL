@@ -33,6 +33,7 @@ body {
   background-image: url(../Asset/img/background-utama.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .navbar {

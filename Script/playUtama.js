@@ -17,7 +17,6 @@ let audioGet = $("#MoneySound")[0];
 let audioOut = $("#BuySound")[0];
 let bgmusic = $("#bgmusic")[0];
 
-
 bgmusic.play();
 bgmusic.volume = 0.35;
   
