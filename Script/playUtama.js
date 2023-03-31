@@ -17,15 +17,10 @@ let audioGet = $("#MoneySound")[0];
 let audioOut = $("#BuySound")[0];
 let bgmusic = $("#bgmusic")[0];
 
-let music = confirm("Nyalakan Music?");
 
-if (music == true) {
-    bgmusic.play();
-    bgmusic.volume = 0.35;
-} else {
-    bgmusic.volume = 0;
-};
-
+bgmusic.play();
+bgmusic.volume = 0.35;
+  
 $(".gambarTahu").click(function nambahUang() {
     uangJuragan = uangJuragan + incomeClick;
     $(".uangVal").text("$" + uangJuragan);
