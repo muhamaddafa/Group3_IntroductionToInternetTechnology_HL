@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sigmar+One&display=swap');
+
+* {
+  font-family: 'Secular One', sans-serif;
+}
+
+@media (max-width: 992px) {
+  
+    .container {
+      width: 90%;
+    }
+}
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+to{
+    opacity: 1;
+    transform: rotateX(0);
+}
+}
+
+html, body{
+    height: 100%;
+    animation: transitionIn 0.75s;
+    background-color: #41C3C5;
+}
+
+.mainDisplay {
+    height: 100%;
+    background-image: url(../Asset/img/background-utama.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.btn-nav {
+  padding: 12px 24px;
+  border: none;
+  background-color: #078080;
+  color: #f8f5f2;
+  border-radius: 10px;
+  box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
+}
+
+.choiceChar{
+  margin: auto;
+}
+
+.card-img-top{
+  margin: auto;
+}
+
+.card-title, .card-text{
+  color: white;
+}
+
+.card-body{
+  /* background-color: #078080; */
+  background-color: #0D1117;
+}
+
+.btn-dark{
+  margin: auto;
+  width: 60%;
+  transition: 0.4s;
+  /* background-color: #0D1117; */
+}
+
+.btn-dark:hover{
+  background-color: #efebeb;
+  color: #0D1117;
+}
+
+@media (max-width: 992px) {
+    .choiceChar {
+      width: 50%;
+    }
+}
