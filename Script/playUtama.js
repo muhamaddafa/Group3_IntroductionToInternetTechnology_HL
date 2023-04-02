@@ -1,4 +1,4 @@
-let incomeUpgrade = 0;
+let incomeToko = 1;
 let incomeClick = 1;
 let jmlToko = 1;
 let uangJuragan = 0;
@@ -41,19 +41,8 @@ $(".btnCabang").click(function beliCabang() {
         $(".btnCabang").append(iconCabang);
         $(iconCabang).after("Buka Cabang Baru $" + bukaCabangVal);
 
-        if(incomeUpgrade == 0 && jmlToko >= 1){
-            incomeClick = incomeClick + 1; 
-            jmlToko = jmlToko + 1;
-        }
-        else if ( incomeUpgrade == 1 && jmlToko >= 1 && 3>= ketRisol >= 1){
-            jmlToko = jmlToko + 1;
-            incomeClick = incomeClick *jmlToko;
-        }
-        else if (incomeUpgrade > 1 && jmlToko >= 1)
-        {
-            jmlToko = jmlToko + 1;
-            incomeClick = (incomeUpgrade+2) * jmlToko;
-        };
+        jmlToko = jmlToko + 1;
+        incomeClick = incomeToko * jmlToko;
         $(".cabangVal").text(jmlToko);
         $(".incomeJuragan").text("Income Juragan = $" + incomeClick);
         audioOut.play();
@@ -86,11 +75,10 @@ $(".btnRisol").click(() => {
         alert("Maaf Uang Juragan Tidak Cukup.");
     } else {
         uangJuragan = uangJuragan - hargaRisol;
+        incomeToko = incomeToko + ketRisol;
         if (jmlToko == 1 && lvlRisol == 1){
             incomeClick = incomeClick + ketRisol;
-            incomeUpgrade = incomeUpgrade + ketRisol;
         }else{
-            incomeUpgrade = incomeClick + incomeUpgrade - ketRisol;
             incomeClick = incomeClick + jmlToko * ketRisol;
         };
         ketRisol = ketRisol + 1;
@@ -116,11 +104,10 @@ $(".btnCakwe").click(() => {
         alert("Maaf Uang Juragan Tidak Cukup.");
     } else {
         uangJuragan = uangJuragan - hargaCakwe;
+        incomeToko = incomeToko + ketCakwe;
         if (jmlToko == 1 && lvlCakwe == 1){
             incomeClick = incomeClick + ketCakwe;
-            incomeUpgrade = incomeUpgrade + ketCakwe;
         }else{
-            incomeUpgrade = incomeUpgrade + incomeClick - ketCakwe;
             incomeClick = incomeClick + jmlToko * ketCakwe;
         }
         ketCakwe = ketCakwe + 1;
@@ -146,11 +133,10 @@ $(".btnCimol").click(() => {
         alert("Maaf Uang Juragan Tidak Cukup.");
     } else {
         uangJuragan = uangJuragan - hargaCimol;
+        incomeToko = incomeToko + ketCimol;
         if (jmlToko == 1 && lvlCimol == 1){
             incomeClick = incomeClick + ketCimol;
-            incomeUpgrade = incomeUpgrade + ketCimol;
         }else{
-            incomeUpgrade = incomeUpgrade + incomeClick - ketCimol;
             incomeClick = incomeClick + jmlToko * ketCimol;
         }
         ketCimol = ketCimol + 1;
