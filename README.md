@@ -8,7 +8,7 @@ The Project For MidTerm Exam (Introduction To Internet Technology) - H - LAB
 5. Rich Marvin Lim (00000079061)
 
 <h1>Tahu Bulat's Game (Fitur dan Batasan)</h1>
-<p><b>Link Game:</b></br>https://bit.ly/Group3_UMNGotcha_H_Lec</p>
+<p><b>Link Game:</b></br>https://muhamaddafa.github.io/Group3_IntroductionToInternetTechnology_HL/home.html</p>
 
 <p><b>Penjelasan Level</b></br>Tahu Bulat's game adalah permainan clicker. Di dalam permainan ini pemain hanya akan memencet gambar tahu untuk </br>mendapatkan uang, dan juga pemain bisa mengupgrade penghasilnya dengan membeli beberapa add-On dalam game.</p>
 
