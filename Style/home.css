@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sigmar+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Sigmar+One&display=swap");
 
 * {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
-@media (min-width: 500px){
-  .container{
+@media (min-width: 500px) {
+  .container {
     max-width: 800px;
   }
 }
 
-html, body{
+html,
+body {
   height: 100%;
   animation: transitionIn 0.75s;
   margin: 0;
 }
 
-@keyframes transitionIn{
-  from{
+@keyframes transitionIn {
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
 
-  to{
+  to {
     opacity: 1;
     transform: rotateX(0);
   }
@@ -37,8 +38,8 @@ html, body{
   margin: 0;
 }
 
-.judul h1{
-  font-family: 'Sigmar One', cursive;
+.judul h1 {
+  font-family: "Sigmar One", cursive;
   text-shadow: 0px 6px 5px rgba(185, 185, 185, 1);
   color: #232323;
   font-size: 100px;
@@ -57,10 +58,11 @@ html, body{
   font-weight: bold;
   z-index: 1;
   margin-top: 40px;
-  margin-left: 41%;
- }
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .btn2 {
+.btn2 {
   display: block;
   padding: 0.7em 1em;
   background: transparent;
@@ -73,15 +75,16 @@ html, body{
   font-weight: bold;
   z-index: 1;
   margin-top: 20px;
-  margin-left: 41%;
- }
- 
- .cube {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cube {
   position: relative;
   transition: all 0.5s;
- }
- 
- .cube .bg-top {
+}
+
+.cube .bg-top {
   position: absolute;
   height: 10px;
   background: #d4af37;
@@ -91,13 +94,13 @@ html, body{
   transform: skew(-45deg, 0);
   margin: 0;
   transition: all 0.4s;
- }
- 
- .cube .bg-top .bg-inner {
+}
+
+.cube .bg-top .bg-inner {
   bottom: 0;
- }
- 
- .cube .bg {
+}
+
+.cube .bg {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -105,9 +108,9 @@ html, body{
   right: 0;
   background: #d4af37;
   transition: all 0.4s;
- }
- 
- .cube .bg-right {
+}
+
+.cube .bg-right {
   position: absolute;
   background: #d4af37;
   top: -5px;
@@ -117,66 +120,66 @@ html, body{
   left: 100%;
   transform: skew(0, -45deg);
   transition: all 0.4s;
- }
- 
- .cube .bg-right .bg-inner {
+}
+
+.cube .bg-right .bg-inner {
   left: 0;
- }
- 
- .cube .bg-inner {
+}
+
+.cube .bg-inner {
   background: #28282d;
   position: absolute;
   left: 2px;
   right: 2px;
   top: 2px;
   bottom: 2px;
- }
- 
- .cube .text {
+}
+
+.cube .text {
   position: relative;
   transition: all 0.4s;
- }
- 
- .cube:hover .bg-inner {
+}
+
+.cube:hover .bg-inner {
   background: #d4af37;
   transition: all 0.4s;
- }
- 
- .cube:hover .text {
+}
+
+.cube:hover .text {
   color: #28282d;
   transition: all 0.4s;
- }
- 
- .cube:hover .bg-right,
- .cube:hover .bg,
- .cube:hover .bg-top {
-  background: #28282d;
- }
- 
- .cube:active {
-  z-index: 9999;
-  animation: bounce .1s linear;
- }
- 
- @keyframes bounce {
-  50% {
-   transform: scale(0.9);
-  }
- }
+}
 
-.button{
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+  background: #28282d;
+}
+
+.cube:active {
+  z-index: 9999;
+  animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.button {
   margin-top: 120px;
 }
 
-.gambarTahu{
+.gambarTahu {
   width: 200px;
 }
 
-.status h2{
-  color:white;
+.status h2 {
+  color: white;
 }
 
-.load{
+.load {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +187,7 @@ html, body{
   min-height: 100vh;
 }
 
-.loading{
+.loading {
   width: 100%;
   height: auto;
   display: flex;
@@ -192,7 +195,7 @@ html, body{
   align-items: center;
 }
 
-.lineBox{
+.lineBox {
   position: relative;
   padding: 2px;
   width: 40%;
@@ -201,116 +204,116 @@ html, body{
   border-radius: 20px;
 }
 
-.line{
+.line {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   border-radius: 20px;
-  background: #67D295;
-  animation: loading 5s forwards cubic-bezier(0,0,0,0);
+  background: #67d295;
+  animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);
 }
 
 .lineHead {
   position: absolute;
   top: -5px;
-  animation: loadingHead 5s forwards cubic-bezier(0,0,0,0);
+  animation: loadingHead 5s forwards cubic-bezier(0, 0, 0, 0);
   width: 70px;
-  height: 150%; 
+  height: 150%;
   object-fit: contain;
 }
 
-@keyframes loading{
-  0%{
+@keyframes loading {
+  0% {
     width: 0%;
   }
 
-  100%{
+  100% {
     width: 100%;
   }
 }
 
-@keyframes loadingHead{
-  0%{
+@keyframes loadingHead {
+  0% {
     width: 0%;
     left: 0;
   }
 
-  100%{
+  100% {
     width: 100%;
     left: 48.5%;
   }
 }
 
-h2 span{
+h2 span {
   position: relative;
   display: inline-block;
   animation: animate 3s linear infinite;
 }
 
-h2 span:nth-child(1){
+h2 span:nth-child(1) {
   animation-delay: 0s;
 }
-h2 span:nth-child(2){
+h2 span:nth-child(2) {
   animation-delay: 0.2s;
 }
-h2 span:nth-child(3){
+h2 span:nth-child(3) {
   animation-delay: 0.4s;
 }
-h2 span:nth-child(4){
+h2 span:nth-child(4) {
   animation-delay: 0.6s;
 }
-h2 span:nth-child(5){
+h2 span:nth-child(5) {
   animation-delay: 0.8s;
 }
-h2 span:nth-child(6){
+h2 span:nth-child(6) {
   animation-delay: 1s;
 }
-h2 span:nth-child(7){
+h2 span:nth-child(7) {
   animation-delay: 1.2s;
 }
-h2 span:nth-child(8){
+h2 span:nth-child(8) {
   animation-delay: 1.4s;
 }
-h2 span:nth-child(9){
+h2 span:nth-child(9) {
   animation-delay: 1.6s;
 }
-h2 span:nth-child(10){
+h2 span:nth-child(10) {
   animation-delay: 1.8s;
 }
-h2 span:nth-child(11){
+h2 span:nth-child(11) {
   animation-delay: 2s;
 }
-h2 span:nth-child(12){
+h2 span:nth-child(12) {
   animation-delay: 2.2s;
 }
-h2 span:nth-child(13){
+h2 span:nth-child(13) {
   animation-delay: 2.4s;
 }
-h2 span:nth-child(14){
+h2 span:nth-child(14) {
   animation-delay: 2.6s;
 }
-h2 span:nth-child(15){
+h2 span:nth-child(15) {
   animation-delay: 2.8s;
 }
-h2 span:nth-child(16){
+h2 span:nth-child(16) {
   animation-delay: 3s;
 }
-h2 span:nth-child(17){
+h2 span:nth-child(17) {
   animation-delay: 3s;
 }
-h2 span:nth-child(18){
+h2 span:nth-child(18) {
   animation-delay: 3.2s;
 }
 
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: translateY(0px);
   }
-  25%{
+  25% {
     transform: translateY(-10px);
   }
-  50%{
+  50% {
     transform: translateY(0px);
   }
 }
